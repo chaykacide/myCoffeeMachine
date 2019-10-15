@@ -13,9 +13,14 @@ class NewVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         
         ingrStatus?.text = coffeeMaker.ingrStatusChecker()
-
+        
     }
     
     @IBAction func addWaterButton(_ sender: UIButton) {

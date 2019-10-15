@@ -15,7 +15,13 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
         ingrStatus?.text = coffeeMaker.ingrStatusChecker()
+        
     }
     
     @IBAction func makeLatte(_ sender: UIButton) {
@@ -42,4 +48,8 @@ class ViewController: UIViewController {
         ingrStatus?.text = coffeeMaker.ingrStatusChecker()
     }
     
+    
+    @IBAction func addButton(_ sender: UIButton) {
+        tabBarController?.selectedIndex = 1
+    }
 }
