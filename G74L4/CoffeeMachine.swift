@@ -11,16 +11,16 @@ class CoffeeMachine: NSObject {
         static var beansTank = 50
     }
     
-    private let waterForCapuchino = 200
-    private let milkForCapuchino = 125
+    private let waterForCapuchino = 175
+    private let milkForCapuchino = 75
     private let beansForCapuchino = 15
     
     private let waterForAmericano = 125
     private let milkForAmericano = 0
     private let beansForAmericano = 12
     
-    private let waterForLatte = 250
-    private let milkForLatte = 150
+    private let waterForLatte = 225
+    private let milkForLatte = 130
     private let beansForLatte = 17
     
     private let waterForMokko = 150
@@ -33,14 +33,11 @@ class CoffeeMachine: NSObject {
             CoffeeMachineTanks.milkTank >= milkForCapuchino &&
             CoffeeMachineTanks.beansTank >= beansForCapuchino {
             done = cupOfCapuchino()
-        }
-        else if CoffeeMachineTanks.waterTank < waterForCapuchino {
+        } else if CoffeeMachineTanks.waterTank < waterForCapuchino {
             done = "Не хватает воды."
-        }
-        else if CoffeeMachineTanks.milkTank < milkForCapuchino {
+        } else if CoffeeMachineTanks.milkTank < milkForCapuchino {
             done = "Не хватает молока."
-        }
-        else if CoffeeMachineTanks.beansTank < beansForCapuchino {
+        } else if CoffeeMachineTanks.beansTank < beansForCapuchino {
             done = "Не хватает зёрен."
         }
         return done

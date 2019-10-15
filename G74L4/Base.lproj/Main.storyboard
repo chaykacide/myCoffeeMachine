@@ -10,7 +10,7 @@
         <!--Управление-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="G74L4" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MakeCoffeeScreen" customModule="G74L4" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -131,7 +131,7 @@
                     <navigationItem key="navigationItem" id="CY3-2q-RVX"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="ingrStatus" destination="Vdw-CK-c9b" id="6Sd-lJ-Ejw"/>
+                        <outlet property="ingridientsStatus" destination="Vdw-CK-c9b" id="d0a-N1-sRD"/>
                         <outlet property="makeAmericano" destination="XDr-IV-pzF" id="4hV-96-YEn"/>
                         <outlet property="makeCapuchino" destination="Tu8-Tf-waK" id="AGx-8q-A4d"/>
                         <outlet property="makeLatte" destination="ipg-Oe-mvd" id="Wdf-nI-jSQ"/>
@@ -207,7 +207,7 @@
         <!--Хранилище-->
         <scene sceneID="004-s8-j6o">
             <objects>
-                <viewController interfaceStyle="light" id="bYa-Ol-Ef9" customClass="NewVC" customModule="G74L4" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController interfaceStyle="light" id="bYa-Ol-Ef9" customClass="AddIngridientsScreen" customModule="G74L4" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DDX-Ik-CAY">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -296,7 +296,7 @@
                         <outlet property="addBeans" destination="S6e-0C-wxC" id="W23-xN-Cs1"/>
                         <outlet property="addMilk" destination="UTN-54-SyH" id="aaB-dV-U7j"/>
                         <outlet property="addWater" destination="zxr-qp-txK" id="QSJ-3q-wsG"/>
-                        <outlet property="ingrStatus" destination="Qr7-Lb-G9x" id="R53-ft-gzQ"/>
+                        <outlet property="ingridientsStatus" destination="Qr7-Lb-G9x" id="ZoN-t2-FEB"/>
                         <outlet property="statusLabel" destination="mFN-u7-QUG" id="9Y6-EI-5C9"/>
                     </connections>
                 </viewController>
